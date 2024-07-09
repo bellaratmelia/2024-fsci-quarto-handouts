@@ -1,0 +1,82 @@
+---
+title: "Try it together - Markdown Basics"
+author: "your name"
+format: html
+toc: true
+---
+
+## Introduction
+
+This document is designed to help you practice and familiarize yourself with the basic Markdown syntax used in Quarto documents.
+
+Follow along and try out each example in your own Quarto document.
+
+## Headings
+
+Headings are created using the `#` symbol followed by a space. The number of `#` symbols determines the heading level.
+
+# Level 1 Heading
+
+## Level 2 Heading
+
+### Level 3 Heading
+
+#### Level 4 Heading
+
+## Text Formatting
+
+You can add emphasis to your text using asterisks `*`.
+
+*Italic text* **Bold text** ***Bold and Italic text***
+
+use \` to add `verbatim code`.
+
+## Lists
+
+Follow the example below to create a list of points.
+
+-   unordered list
+
+    -   sub-item 1
+    -   sub-item 2
+        -   sub-sub-item 1
+
+-   item 2
+
+    continued (tab)
+
+1.  ordered list
+2.  item 2
+    i)  sub-item 1
+        A.  sub-sub-item 1
+
+-   [ ] Task 1
+-   [x] Task 2
+
+## Testing the line breaks
+
+Line break **doesn't work** with one single line-break. Try using two spaces at the end of a sentence.\
+OR a backslash.\
+New paragraph can be created with two line-breaks.
+
+Do you notice the subtle differences?
+
+## Links
+
+You can create links using the following syntax: `[link text](url)`.
+
+[Quarto Website](https://quarto.org)
+
+## Images
+
+Images can be embedded using the following syntax: `![alt text](image url)`.
+
+![Quarto Logo](https://quarto.org/quarto.png)
+
+## Code
+
+Inline code can be marked using backticks: `inline code`.
+
+Code blocks are created using triple backticks:
+
+\`\`\`python \# Python code block def greet(name): print(f"Hello, {name}!")
