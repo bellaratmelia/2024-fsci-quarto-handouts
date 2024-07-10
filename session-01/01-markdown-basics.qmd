@@ -1,0 +1,84 @@
+---
+title: "Try it together - Markdown Basics"
+author: "your name"
+format: html
+---
+
+## Introduction
+
+This document is designed to help you practice and familiarize yourself with the basic Markdown syntax used in Quarto documents.
+
+Follow along and try out each example in your own Quarto document.
+
+## Headings
+
+Headings are created using the `#` symbol followed by a space. The number of `#` symbols determines the heading level.
+
+```
+## Level 2 Heading
+
+### Level 3 Heading
+
+#### Level 4 Heading
+```
+
+## Text Formatting
+
+You can add emphasis to your text using asterisks `*`.
+
+*Italic text* **Bold text** ***Bold and Italic text***
+
+use \` to add `verbatim code`.
+
+## Lists
+
+Follow the example below to create a list of points.
+
+-   unordered list
+
+    -   sub-item 1
+    -   sub-item 2
+        -   sub-sub-item 1
+
+1.  ordered list
+2.  item 2
+    i)  sub-item 1
+        A.  sub-sub-item 1
+
+-   [ ] Task 1
+-   [ ] Task 2
+
+## Line Breaks
+
+Line break **doesn't work** with one single line-break. Try using two spaces at the end of a sentence.\
+OR a backslash.\
+New paragraph can be created with two line-breaks.
+
+Do you notice the subtle differences?
+
+## Links
+
+You can create links using the following syntax: `[link text](url)`.
+
+For example, `[Quarto Website](https://quarto.org)` will be rendered as
+
+[Quarto Website](https://quarto.org)
+
+## Images
+
+Images can be embedded using the following syntax: `![alt text](image url)`.
+
+For example, `![Quarto Logo](https://quarto.org/quarto.png)` will be rendered as:
+
+![Quarto Logo](https://quarto.org/quarto.png)
+
+## Code
+
+Inline code can be marked using backticks, e.g. \`inline code\` will output `inline code`.
+
+Code blocks are created using triple backticks:
+
+```{r}
+#| echo: fenced
+library(quarto)
+```

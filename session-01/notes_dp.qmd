@@ -4,7 +4,6 @@ author: "Danping"
 format: html
 ---
 
-
 ## Absolute positions
 
 ::: {.absolute .fragment bottom="25" left="100"}
@@ -32,4 +31,3 @@ library(ggplot2)
 ggplot(mtcars, aes(x = mpg, y = disp)) +
   geom_point()
 ```
-
