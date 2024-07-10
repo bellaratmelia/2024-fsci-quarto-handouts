@@ -2,3 +2,16 @@
 .Rhistory
 .RData
 .Ruserdata
+
+/.quarto/
+Session-01/01-Markdown-basics_files/libs/bootstrap/bootstrap-icons.css
+Session-01/01-Markdown-basics_files/libs/bootstrap/bootstrap-icons.woff
+Session-01/01-Markdown-basics_files/libs/bootstrap/bootstrap.min.css
+Session-01/01-Markdown-basics_files/libs/bootstrap/bootstrap.min.js
+Session-01/01-Markdown-basics_files/libs/clipboard/clipboard.min.js
+Session-01/01-Markdown-basics_files/libs/quarto-html/anchor.min.js
+Session-01/01-Markdown-basics_files/libs/quarto-html/popper.min.js
+Session-01/01-Markdown-basics_files/libs/quarto-html/quarto-syntax-highlighting.css
+Session-01/01-Markdown-basics_files/libs/quarto-html/quarto.js
+Session-01/01-Markdown-basics_files/libs/quarto-html/tippy.css
+Session-01/01-Markdown-basics_files/libs/quarto-html/tippy.umd.min.js
