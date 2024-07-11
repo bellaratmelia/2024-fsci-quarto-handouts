@@ -1,83 +1,147 @@
 ---
-title: "Hands-on Exercises: Instructor Version"
+title: "Hands-on #3: Instructor Version"
 Author: "Danping"
-format: html
+format: 
+    html:
+        toc: true
+        toc-depth: 4
+        number-sections: false
+        #styling options
+        theme: default
+        # code block options
+        highlight-style: "breeze"
+        code-line-numbers: true
+        code-tools: true
+        code-fold: show
+        code-overflow: "wrap" #Other option: scroll
+        # execution options
+        echo: true
+        eval: true
+        warning: false
+        error: false
 ---
 
-## Hands-on #1
+## Hands-on #3
 
 ### Instructions
 
-1.  Click on `New File` –\> `Quarto Document` to create a blank `.qmd` file
-2.  **Update YAML header**: title, author, date and set format to html `format: html`
-3.  **Use *visual editor* OR *markdown editor* to add headings** - to get familiarized with the interface and switch between the two editors. Instructor will use visual editor followed by markdown editor
-4.  Add some text in bold or italics
-5.  Add some executable R code or verbatim code
-6.  Render the document using the `Render` button
+1.  Play around with YAML options and render the document to see the output.
 
-### Demo code
+-   Add table of contents `toc: true`
 
-#### Research Question
+-   change the depth of your Table of Contents, e.g. `toc-depth: 3`
 
-Do cats prefer window seats or cozy corners in cat cafés?
+-   Pick a [HTML theme](https://quarto.org/docs/output-formats/html-themes.html) at this link to be applied on your document, e.g. `theme: "chosen theme"`
 
-#### Data Collection
+-   
 
-We observed 50 cats in 5 different cat cafés. We recorded:
+2.  render with terminal and Quarto console
 
-\- Cat's choice of spot (window or corner)
+### Demo
 
-\- Cat's age (young, adult, senior)
+#### Format
 
-\- Time of day (morning, afternoon, evening)
-
-#### Analysis
-
-```{r}
-
-# Create a simple pie chart
-cat_spots <- c(window = 30, corner = 20)
-pie(cat_spots, main="Cat's Favorite Spots")
-
+```         
+---
+format: pdf
+---
 ```
 
-## Hands-on #2
+::: aside
+Try Other options: html, pdf, docx, pptx, revealjs etc.
+:::
 
-### Instructions:
+#### Table of Contents
 
-1.  Add some numbered list and non-numbered list, using the *visual editor.* Switch back to the *markdown editor* and take note of the syntax. Try creating lists using codes as well.
+1.  TOC as a global option:
 
-2.  Add a piece of text and hyperlink it to a URL.
+```         
+toc: true
+toc-depth: 4
+```
 
-3.  Insert the image of a cat cafe into your report. The path to the image is `Session-01/cat-cafe.jpg`
+2.  TOC for specific format - note the nested layout:
 
-    ::: callout-tip
-    Hint: Use the syntax `![caption](path_to_image)`. For example, `![Elephant](elephant.png)`
-    :::
+```         
+---
+format: 
+    html:
+        toc: true
+---
+```
 
-#### Demo code
+3.  Numbered sections
 
-**Lists**
+```         
+number-sections: true
+```
 
--   item 1
+#### Styling
 
-    -   sub-item 1
+```         
+theme: "quartz"
+```
 
-    -   sub-item 2
+#### code & execution related settings
 
-        -   sub-item 3
 
-1.  numbered list
+**Hiding code**： hide codes in the output file
 
-    a.  sub-item a
+Note: this can be override with settings inside individual code blocks, i.e. code chunk options
 
-        i.  sub-sub-item i
-        ii. sub-sub-item ii
+**Code Fold**: true\|false\|show (fold but initially shown)
 
-**Links**
+```         
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+```
 
-Click on [this link](https://doi.org/10.6084/m9.figshare.25326322.v2) to access the underlying research data for our research.
+**Code Overflow**: wrap\|scroll
 
-**Images**
+```         
+format:
+  html:
+    code-overflow: wrap
+```
 
-![Photo of a cat cafe](cat-cafe.jpg)
+**Code Tools**: include tools for readers to copy codes or interact with your document
+
+```         
+format:
+  html:
+    code-fold: true
+```
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+ggplot(penguins, 
+       aes(x = flipper_length_mm, y = bill_length_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  labs(
+    title = "Flipper and bill length",
+    subtitle = "Dimensions for penguins at Palmer Station LTER",
+    x = "Flipper length (mm)", y = "Bill length (mm)",
+    color = "Penguin species", shape = "Penguin species"
+  ) +
+  theme_minimal()
+```
+
+```{markdown}
+#DEMO YAML Header Options
+---
+highlight-style: "breeze" 
+code-line-numbers: true
+code-tools: true
+code-fold: show
+code-overflow: "wrap" #Other option: scroll
+
+eval: false #whether to run the code for every rendering
+echo: true #whether to include code in the rendered document
+warning: false #whether to display warnings in the rendered document
+error: false #whether to display errors in the rendered document
+---
+```
