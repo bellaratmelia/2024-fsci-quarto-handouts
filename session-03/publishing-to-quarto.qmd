@@ -1,0 +1,38 @@
+---
+title: "Creating a website and publishing it to Quarto Pub"
+format: html
+author: "Bella"
+---
+
+## Hands-on #1: Create a new Quarto Website project
+
+### Instruction:
+
+1.  In Rstudio, go to `File` \> `New Project` \> `New Directory` \> `Quarto Website`
+2.  Use this directory name: `first-quarto-website`
+3.  Make sure that `Open in new session` at the bottom left of the popup is ticked.
+4.  Click on `Create Project`
+
+![](quartopub-web.jpg){width="650"}
+
+## Hands-on #2: Make some edits!
+
+### Instruction:
+
+1.  Put a couple of fun fact about yourself or your research interests on `index.qmd` page
+2.  Add a new page called `institution.qmd` and put in a couple of fun fact (normal facts are also OK if there is no fun fact) about your institution.
+3.  Adjust the `_quarto.yml` page to include this new page in the navigation
+
+## Hands-on #3: Publishing the website to Quarto Pub
+
+### Instruction:
+
+1.  Create an account at Quarto Pub (<https://quartopub.com/>) - make sure to do this on your default browser.
+
+2.  Go back to your project in RStudio, and type the following command on the **Terminal** tab (not Console!): **`quarto publish quarto-pub`**
+
+3.  If this is your first time publishing the project, you will be required to authorize your account and generate the access token. Follow the instructions in terminal.
+
+4.  Once your site is successfully published, it will appear at `https://your-username.quarto.pub/first-quarto-website`
+
+5.  Go to your Quarto Pub account and explore the available options on what you can do with the site.
