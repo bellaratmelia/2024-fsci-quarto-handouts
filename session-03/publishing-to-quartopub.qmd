@@ -36,3 +36,11 @@ author: "Bella"
 4.  Once your site is successfully published, it will appear at `https://your-username.quarto.pub/first-quarto-website`
 
 5.  Go to your Quarto Pub account and explore the available options on what you can do with the site.
+
+::: callout-note
+You can also publish a single document or presentation with a slightly different command:
+
+`quarto publish quarto-pub document-name.qmd`
+
+Try it with one of the document that we created on session 1/session 2!
+:::
