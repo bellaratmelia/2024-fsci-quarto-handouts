@@ -84,7 +84,6 @@ theme: "quartz"
 
 #### code & execution related settings
 
-
 **Hiding code**： hide codes in the output file
 
 Note: this can be override with settings inside individual code blocks, i.e. code chunk options

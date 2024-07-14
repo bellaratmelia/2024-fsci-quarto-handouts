@@ -1,0 +1,107 @@
+---
+title: "FSCI C03 Session 02 Try-it-together activities"
+format: html
+---
+
+## Hands-on #1: Exploring code chunks
+
+### Instructions:
+
+1.  Code chunks exploration
+2.  Code annotation explorations
+
+## Hands-on #2: In-text Citations and References
+
+### Instructions:
+
+Below is a snapshot of a paragraph from the tidyverse homepage, with hard-coded in-text citations and reference section.
+
+1.  Replace the hard-coded in-text citations (marked in bold) with Quarto syntax.
+    -   You can either search the items using DOI provided, or add the items to your Zotero library.
+2.  Set the Reference section to appear right after the paragraph, replacing the "References used" section.
+3.  Change the reference style to use APA style (any edition will do). Download the CSL file from <https://github.com/citation-style-language/styles>.
+
+**Paragraph:**
+
+There are a number of projects that are similar in scope to the tidyverse. The closest is perhaps Bioconductor **(Gentleman et al. 2004; Huber et al. 2015)**, which provides an ecosystem of packages that support the analysis of high-throughput genomic data. The tidyverse has similar goals to R itself, but any comparison to the R Project **(R Core Team 2019)** is fundamentally challenging as the tidyverse is written in R, and relies on R for its infrastructure; there is no tidyverse without R! That said, the biggest difference is in priorities: base R is highly focused on stability, whereas the tidyverse will make breaking changes in the search for better interfaces. Another closely related project is data.table by **Dowle and Srinivasan (2019)**, which provides tools roughly equivalent to the combination of dplyr, tidyr, tibble, and readr. data.table prioritises concision and performance.
+
+**References used:**
+
+Huber, W., V. J. Carey, R. Gentleman, S. Anders, M. Carlson, B. S. Carvalho, H. C. Bravo, et al. 2015. “Orchestrating High-Throughput Genomic Analysis with Bioconductor.”
+*Nature Methods* 12 (2): 115–21. <https://www.nature.com/articles/nmeth.3252>.
+
+Gentleman, R.C., Carey, V.J., Bates, D.M. et al. Bioconductor: open software development for computational biology and bioinformatics. Genome Biol 5, R80 (2004). <https://doi.org/10.1186/gb-2004-5-10-r80>
+
+R Core Team. 2019. *R: A Language and Environment for Statistical Computing*. Vienna, Austria: R Foundation for Statistical Computing. [https://www.R-project.org/](https://www.r-project.org/).
+
+Dowle, Matt, and Arun Srinivasan. 2019. *data.table: Extension of ‘Data.frame‘*. [https://CRAN.R-project.org/package=data.table](https://cran.r-project.org/package=data.table).
+
+## Hands-on #3: Adding footnotes & cross-references
+
+### Instructions:
+
+1.  Add the URLs to the tidyverse packages mentioned in the paragraph (dplyr, tidyr, tibble, and readr) as footnotes.
+2.  Try cross-referencing a code chunk that we created earlier in a paragraph! (This is where the code chunk label will come in handy!)
+
+## Hands-on #4: Front Matter 
+
+### Instructions:
+
+Copy and paste the following Front Matter template to your quarto document:
+
+``` YAML
+---
+title: "Library Carpentry: Best practices in organizing shelf space in the library"
+date: 2024-07-01
+author:
+  - name: Bella Ratmelia
+    id: br
+    orcid: 0000-0003-4913-9508
+    email: bellar@smu.edu.sg
+    corresponding: true
+    affiliation: 
+      - name: Singapore Management University
+        city: Singapore
+        url: www.smu.edu.sg
+  - name: Danping Dong
+    id: dp
+    orcid: 0000-0003-4913-9508
+    email: bellar@smu.edu.sg
+    affiliation: 
+      - name: Singapore Management University
+        city: Singapore
+        url: www.smu.edu.sg
+abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+keywords:
+  - Library
+  - Carpentry
+license: "CC BY"
+copyright: 
+  holder: Bella Ratmelia
+  year: 2024
+citation: 
+  container-title: Journal of Library Carpentry
+  volume: 1
+  issue: 1
+  doi: 10.5555/12345678
+funding: "The author received no specific funding for this work."
+---
+```
+
+1.  Add another author to the list of authors above, and make this new author the corresponding author.
+2.  Amend the information in the sample to include author roles (pick any!) using the [CRediT](https://credit.niso.org/) taxonomy.
+3.  Render the page to HTML. Does the output look different than what you expected?
+
+## Hands-on #5: Extension for Scholarly Article
+
+### Instructions:
+
+1.  Go to the list of Quarto extensions for scholarly articles: <https://quarto.org/docs/extensions/listing-journals.html>
+2.  Let's try creating a new document using the PLOS template. In your Terminal, type the following: `quarto use template quarto-journals/plos`
+3.  Next, let's use the document that we have been using for this session and render it to follow PLOS template by going to the document and typing this in your Terminal: `quarto render session-02-practice.qmd --to plos-pdf`
+
+## Hands-on #6: Converting to Word or PDF
+
+### Instructions:
+
+1.  Amend the YAML header in your document to convert it to PDF/ Word. Does the output look different than what you expected?
