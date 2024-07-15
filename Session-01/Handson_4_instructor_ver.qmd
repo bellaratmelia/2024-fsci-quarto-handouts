@@ -1,0 +1,34 @@
+---
+title: "Hands-on #3: Instructor Version"
+Author: "Danping"
+format: 
+    html:
+        toc: true
+        toc-depth: 4
+        number-sections: false
+        #styling options
+        theme: default
+        # code block options
+        highlight-style: "breeze"
+        code-line-numbers: true
+        code-tools: true
+        code-fold: show
+        code-overflow: "wrap" #Other option: scroll
+        # execution options
+        echo: true
+        eval: true
+        warning: false
+        error: false
+---
+
+## Hands-on #4
+
+### Instructions
+
+use the penguin document as a template to try out the following features
+
+-   figures + cross reference
+
+-   tables using visual editor
+
+-   call-out box (if time permits)
