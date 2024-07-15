@@ -4,9 +4,7 @@ format: html
 author: "Bella"
 ---
 
-## Hands-on #1: Create a new Quarto Website project
-
-### Instruction:
+## Part 1: Create a new Quarto Website project
 
 1.  In Rstudio, go to `File` \> `New Project` \> `New Directory` \> `Quarto Website`
 2.  Use this directory name: `second-quarto-website`
@@ -16,9 +14,7 @@ author: "Bella"
 
 ![](ghpages-web.jpg){width="650"}
 
-## Hands-on #2: Setting up Quarto Website for GitHub Pages
-
-### Instruction:
+## Part 2: Setting up Quarto Website for GitHub Pages
 
 ::: callout-note
 Note that we will be using GitHub Action to render the website for us to keep things tidy in the long run!
@@ -46,9 +42,7 @@ Note that we will be using GitHub Action to render the website for us to keep th
 
 4.  Next, render your entire website. Click on `Build` on the top menu and click `Render Website`. You will notice that a new folder called `_freeze` has been created. This is where Quarto will save the snapshot of your code execution results.
 
-## Hands-on #3: Publishing to GitHub Pages
-
-### Instruction:
+## Part 3: Publishing to GitHub Pages
 
 [**On your GitHub account:**]{.underline}
 

@@ -4,9 +4,7 @@ format: html
 author: "Bella"
 ---
 
-## Hands-on #1: Create a new Quarto Website project
-
-### Instruction:
+## Part 1: Create a new Quarto Website project
 
 1.  In Rstudio, go to `File` \> `New Project` \> `New Directory` \> `Quarto Website`
 2.  Use this directory name: `first-quarto-website`
@@ -15,17 +13,13 @@ author: "Bella"
 
 ![](quartopub-web.jpg){width="650"}
 
-## Hands-on #2: Make some edits!
-
-### Instruction:
+## Part 2: Make some edits!
 
 1.  Put a couple of fun fact about yourself or your research interests on `index.qmd` page
 2.  Add a new page called `institution.qmd` and put in a couple of fun fact (normal facts are also OK if there is no fun fact) about your institution.
 3.  Adjust the `_quarto.yml` page to include this new page in the navigation
 
-## Hands-on #3: Publishing the website to Quarto Pub
-
-### Instruction:
+## Part 3: Publishing the website to Quarto Pub
 
 1.  Create an account at Quarto Pub (<https://quartopub.com/>) - make sure to do this on your default browser.
 

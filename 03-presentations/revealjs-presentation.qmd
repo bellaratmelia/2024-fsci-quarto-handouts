@@ -8,14 +8,25 @@ author: "Bella"
 
 ### Instructions:
 
-1.  Amend the YAML Header to make slides incremental
-2.  Add new slides
-3.  Edit the code chunks to appear on the slides
+1.  Amend the YAML header to include the following options:
+    1.  Change the width to 1920px and height to 1080px
+    2.  Make the slides scrollable
+    3.  Add slide numbers
+2.  Add a new slide with bullet points listing the types of diamond cuts (or you can lists other things that you prefer)
+3.  Edit all code chunks (except for the load-library code chunk) such that the codes appear on the slides
+4.  Add code annotations on "Correlation" slide, and make the annotations appear incrementally.
+5.  Highlight the `tbl_summary` portion inside `view-summary` code chunk.
+6.  Change the theme to any of the following theme: beige, blood, dark, league, moon, night, serif, simple, sky, or solarized.
+7.  Explore other options to change the slides to your liking! e.g. change the background, split the slides into two columns, etc.
 
 ## The Diamonds dataset
 
 ```{r}
+#| label: load-library
+#| lst-label: lst-loadlib
+#| lst-cap: Load libraries
 #| echo: true
+
 library(tidyverse)
 library(corrplot)
 library(gtsummary)
@@ -24,7 +35,7 @@ library(gtsummary)
 The dataset, available through `ggplot2` package, contains the prices and other attributes of over 50,000 round cut diamonds, specifically 53,940 diamonds. It includes various details such as the price, weight, cut quality, color, clarity, and dimensions of the diamonds. Below is a table detailing the variables included in the dataset:
 
 | **Variable** | **Description**                                                                                   |
-|--------------|----------------------------------------------------------|
+|------------------|------------------------------------------------------|
 | price        | Price in US dollars (\$326–\$18,823)                                                              |
 | carat        | Weight of the diamond (0.2–5.01)                                                                  |
 | cut          | Quality of the cut (Fair, Good, Very Good, Premium, Ideal)                                        |
@@ -39,6 +50,9 @@ The dataset, available through `ggplot2` package, contains the prices and other 
 ## Diamonds overview
 
 ```{r}
+#| label: view-data
+
+
 head(diamonds)
 ```
 
@@ -47,6 +61,9 @@ head(diamonds)
 mean, median, and standard deviation for `price` and `carat`:
 
 ```{r}
+#| label: view-summary
+
+
 diamonds %>% 
   tbl_summary(
     include = c(price, carat, x, y, depth, table),
@@ -59,6 +76,9 @@ diamonds %>%
 ## Histogram of Diamond prices
 
 ```{r}
+#| label: visualize-data
+
+
 ggplot(diamonds, aes(x = price)) +
   geom_histogram(binwidth = 500, fill = "blue", color = "black") +
   labs(title = "Histogram of Diamond Prices", x = "Price (USD)", y = "Frequency")
@@ -67,6 +87,7 @@ ggplot(diamonds, aes(x = price)) +
 ## Distribution of prices for each cut category
 
 ```{r}
+#| label: boxplot-data
 ggplot(diamonds, aes(x = cut, y = price)) +
   geom_boxplot(fill = "lightblue") +
   labs(title = "Boxplot of Diamond Price by Cut", x = "Cut", y = "Price (USD)")
@@ -77,17 +98,21 @@ ggplot(diamonds, aes(x = cut, y = price)) +
 Correlation matrix for numeric variables:
 
 ```{r}
+#| label: corr-data
+
+
 numeric_vars <- diamonds %>% select(price, carat, x, y, z, depth, table)
 cor_matrix <- cor(numeric_vars)
 
 corrplot(cor_matrix, method = "circle")
 ```
 
-## Simple Regression 
+## Simple Regression
 
 Does a diamond's carat affect its price?
 
 ```{r}
+#| label: reg-data
 model_price <- lm(price ~ carat + depth, data = diamonds)
 
 table_carat <- tbl_regression(model_price)

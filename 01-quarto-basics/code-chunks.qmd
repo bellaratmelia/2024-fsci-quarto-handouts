@@ -1,0 +1,12 @@
+---
+title: "Exploring Code Chunks"
+author: "Bella"
+format: html
+---
+
+## Hands-on: Exploring code chunks
+
+### Instructions:
+
+1.  Code chunks exploration
+2.  Code annotation explorations

@@ -1,0 +1,60 @@
+---
+title: "Front Matter Metadata"
+author: "Bella"
+format: html
+---
+
+## Hands-on: Front Matter & Scholarly Extensions
+
+### Part 1: Front Matter metadata
+
+Copy and paste the following Front Matter template to your quarto document:
+
+``` yaml
+---
+title: "Library Carpentry: Best practices in organizing shelf space in the library"
+date: 2024-07-01
+author:
+  - name: Bella Ratmelia
+    id: br
+    orcid: 0000-0003-4913-9508
+    email: bellar@smu.edu.sg
+    corresponding: true
+    affiliation: 
+      - name: Singapore Management University
+        city: Singapore
+        url: www.smu.edu.sg
+  - name: Danping Dong
+    id: dp
+    orcid: 0000-0003-4913-9508
+    email: bellar@smu.edu.sg
+    affiliation: 
+      - name: Singapore Management University
+        city: Singapore
+        url: www.smu.edu.sg
+abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+keywords:
+  - Library
+  - Carpentry
+license: "CC BY"
+copyright: 
+  holder: Bella Ratmelia
+  year: 2024
+citation: 
+  container-title: Journal of Library Carpentry
+  volume: 1
+  issue: 1
+  doi: 10.5555/12345678
+funding: "The author received no specific funding for this work."
+---
+```
+
+1.  Add another author to the list of authors above, and make this new author the corresponding author.
+2.  Amend the information in the sample to include author roles (pick any!) using the [CRediT](https://credit.niso.org/) taxonomy.
+3.  Render the page to HTML. Does the output look different than what you expected?
+
+### Part 2: Extension for Scholarly Articles
+
+1.  Go to the list of Quarto extensions for scholarly articles: <https://quarto.org/docs/extensions/listing-journals.html>
+2.  Let's try creating a new document using the PLOS template. In your Terminal, type the following: `quarto use template quarto-journals/plos`
+3.  Next, let's use the document that we have been using for this session and render it to follow PLOS template by going to the document and typing this in your Terminal: `quarto render session-02-practice.qmd --to plos-pdf`
