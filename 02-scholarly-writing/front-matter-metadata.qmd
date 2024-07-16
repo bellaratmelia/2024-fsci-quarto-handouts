@@ -19,6 +19,7 @@ author:
     id: br
     orcid: 0000-0003-4913-9508
     email: bellar@smu.edu.sg
+    roles: "Shelf Blueprint"
     corresponding: true
     affiliation: 
       - name: Singapore Management University
@@ -26,8 +27,9 @@ author:
         url: www.smu.edu.sg
   - name: Danping Dong
     id: dp
-    orcid: 0000-0003-4913-9508
-    email: bellar@smu.edu.sg
+    orcid: 0000-0002-2229-6709
+    email: dpdong@smu.edu.sg
+    roles: "Materials Procurement"
     affiliation: 
       - name: Singapore Management University
         city: Singapore
@@ -56,5 +58,5 @@ funding: "The author received no specific funding for this work."
 ### Part 2: Extension for Scholarly Articles
 
 1.  Go to the list of Quarto extensions for scholarly articles: <https://quarto.org/docs/extensions/listing-journals.html>
-2.  Let's try creating a new document using the PLOS template. In your Terminal, type the following: `quarto use template quarto-journals/plos`
-3.  Next, let's use the document that we have been using for this session and render it to follow PLOS template by going to the document and typing this in your Terminal: `quarto render session-02-practice.qmd --to plos-pdf`
+2.  Let's try creating a new document using the PLOS template. In your Rstudio's **Terminal**, type the following: `quarto use template quarto-journals/plos`
+3.  Next, let's use the document that we have been using for this session and render it to follow PLOS template by going to the document and typing this in your **Terminal**: `quarto render session-02-practice.qmd --to plos-pdf`
