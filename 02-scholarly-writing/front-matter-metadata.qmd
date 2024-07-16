@@ -59,4 +59,5 @@ funding: "The author received no specific funding for this work."
 
 1.  Go to the list of Quarto extensions for scholarly articles: <https://quarto.org/docs/extensions/listing-journals.html>
 2.  Let's try creating a new document using the PLOS template. In your Rstudio's **Terminal**, type the following: `quarto use template quarto-journals/plos`
-3.  Next, let's use the document that we have been using for this session and render it to follow PLOS template by going to the document and typing this in your **Terminal**: `quarto render session-02-practice.qmd --to plos-pdf`
+3.  Render the article. How does the rendered result look?
+4.  Next, let's use the document that we used for Part 1 and render it to follow PLOS template. Switch back to that document and type this in your **Terminal**: `quarto render session-02-practice.qmd --to plos-pdf`
