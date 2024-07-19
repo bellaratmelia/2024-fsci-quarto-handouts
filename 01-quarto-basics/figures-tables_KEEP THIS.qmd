@@ -1,6 +1,6 @@
 ---
-title: "Hands-on #3: Instructor Version"
-Author: "Danping"
+title: "Hands-on #4: Figures, Tables and Cross-References"
+author: "Danping"
 format: 
     html:
         toc: true
@@ -32,3 +32,16 @@ use the penguin document as a template to try out the following features
 -   tables using visual editor
 
 -   call-out box (if time permits)
+
+
+
+### Additional example on Bootstrap Classes
+Question: What does {.striped and .hover} do?
+
+| fruit  | price  |
+|--------|--------|
+| apple  | 2.05   |
+| pear   | 1.37   |
+| orange | 3.09   |
+
+: Fruit prices {.striped .hover}
