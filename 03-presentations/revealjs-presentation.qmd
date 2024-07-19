@@ -35,7 +35,7 @@ library(gtsummary)
 The dataset, available through `ggplot2` package, contains the prices and other attributes of over 50,000 round cut diamonds, specifically 53,940 diamonds. It includes various details such as the price, weight, cut quality, color, clarity, and dimensions of the diamonds. Below is a table detailing the variables included in the dataset:
 
 | **Variable** | **Description**                                                                                   |
-|------------------|------------------------------------------------------|
+|--------------|---------------------------------------------------------------------------------------------------|
 | price        | Price in US dollars (\$326–\$18,823)                                                              |
 | carat        | Weight of the diamond (0.2–5.01)                                                                  |
 | cut          | Quality of the cut (Fair, Good, Very Good, Premium, Ideal)                                        |
