@@ -12,24 +12,25 @@ format: html
 2.  **Update YAML header**: title, author, date and set format to html `format: html`
 3.  **Use *visual editor* OR *markdown editor* to add headings** - to get familiarized with the interface and switch between the two editors. Instructor will use visual editor followed by markdown editor
 4.  Add some text in bold or italics
-5.  Add some executable R code or verbatim code
-6.  Render the document using the `Render` button
+5.  Render the document using the `Render` button
 
 ## Hands-on #2
 
 ### Instructions:
 
-1.  Add some **numbered list** and **non-numbered list**, using the *visual editor.* Switch back to the *markdown editor* and take note of the syntax. Try creating lists using codes as well.
+1.  Add some executable R code or verbatim code
 
-2.  Add a piece of text and **hyperlink** it to a URL.
+2.  Add some **numbered list** and **non-numbered list**, using the *visual editor.* Switch back to the *markdown editor* and take note of the syntax. Try creating lists using codes as well.
 
-3.  Insert the **image** of a cat cafe into your report. The path to the image is `01-quarto-basics/cat-cafe.jpg`
+3.  Add a piece of text and **hyperlink** it to a URL.
+
+4.  Insert the **image** of a cat cafe into your report. The path to the image is `01-quarto-basics/cat-cafe.jpg`
 
     ::: callout-tip
     Hint: Use the syntax `![caption](path_to_image)`. For example, `![Elephant](elephant.png)`
     :::
 
-4.  Render the document to see the output.
+5.  Render the document to see the output.
 
 ## Sample Report
 
