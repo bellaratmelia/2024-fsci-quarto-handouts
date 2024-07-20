@@ -1,21 +1,7 @@
 ---
-title: "More YAML"
+title: "Hands-on: More YAML"
 author: "Danping"
-format: 
-    html:
-        #styling options
-        theme: default
-        # code block options
-        highlight-style: "breeze"
-        code-line-numbers: true
-        code-tools: true
-        code-fold: show
-        code-overflow: "wrap" #Other option: scroll
-        # execution options
-        echo: true
-        eval: true
-        warning: false
-        error: false
+format: html
 ---
 
 ## Hands-on #3
@@ -52,32 +38,9 @@ Try the YAML options below and find out what they do. Copy the \@
     error:
 ```
 
-#### code & execution related settings
+### Sample Code
 
-**Code Fold**: true\|false\|show (fold but initially shown)
-
-```         
-format:
-  html:
-    code-fold: true
-    code-summary: "Show the code"
-```
-
-**Code Overflow**: wrap\|scroll
-
-```         
-format:
-  html:
-    code-overflow: wrap
-```
-
-**Code Tools**: include tools for readers to copy codes or interact with your document
-
-```         
-format:
-  html:
-    code-fold: true
-```
+You may copy the code chunk below into your document, so as to try out the code and execution-related settings.
 
 ```{r}
 #| label: sample-code
@@ -95,5 +58,3 @@ ggplot(penguins,
   ) +
   theme_minimal()
 ```
-
-Refer to [#instruction](#instruction)
