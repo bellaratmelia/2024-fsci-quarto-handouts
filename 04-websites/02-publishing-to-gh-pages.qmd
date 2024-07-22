@@ -33,6 +33,10 @@ Note that we will be using GitHub Action to render the website for us to keep th
     /_site/
     ```
 
+    ::: callout-note
+    The `_site` folder is where the HTML pages that's generated after the rendering will be saved. Since we will be asking GitHub to do the rendering and publishing, we don't need to commit this folder into our repo. This helps to keep things tidy and avoid *very* messy diffs / conflicts.
+    :::
+
 3.  To make sure that the R codes are executed locally (which will help GitHub to build our pages faster), we need to configure our project to use Quarto's freeze feature. Add the following line inside the `_quarto.yml` file:
 
     ``` yaml
