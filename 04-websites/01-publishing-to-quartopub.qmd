@@ -11,7 +11,7 @@ author: "Bella"
 3.  Make sure that `Open in new session` at the bottom left of the popup is ticked.
 4.  Click on `Create Project`
 
-![](quartopub-web.jpg){width="650"}
+![](images/quartopub-web.jpg){width="650"}
 
 ## Part 2: Make some edits!
 

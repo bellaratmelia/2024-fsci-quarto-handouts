@@ -12,7 +12,7 @@ author: "Bella"
 4.  **Optional**: tick the `Open in new session` at the bottom left of the popup.
 5.  Click on `Create Project`
 
-![](ghpages-web.jpg){width="650"}
+![](images/ghpages-web.jpg){width="650"}
 
 ## Part 2: Setting up Quarto Website for GitHub Pages
 
@@ -44,7 +44,7 @@ Note that we will be using GitHub Action to render the website for us to keep th
       freeze: auto
     ```
 
-4.  Next, render your entire website. Click on `Build` on the top menu and click `Render Website`. You will notice that a new folder called `_freeze` has been created. This is where Quarto will save the snapshot of your code execution results.
+4.  Next, render your entire website. Click on `Build` on the top menu and click `Render Website`. You will notice that a new folder called `_freeze` has been created. This is where Quarto will save the "snapshot" of your code execution results.
 
 ## Part 3: Publishing to GitHub Pages
 
@@ -54,11 +54,41 @@ Note that we will be using GitHub Action to render the website for us to keep th
 
 2.  Once your repository is created, take note on the `.git` link. it should look something like this: `https://github.com/your-username/second-quarto-website.git`
 
-3.  Create a new branch in your repository called `gh-pages`. This is where Quarto will park the rendered HTML results, and GitHub Pages will use the files inside to generate the website.
+![](images/gh-pages-init.jpg){fig-align="center"}
 
 [**Back to RStudio:**]{.underline}
 
-1.  Next, go back to your project on RStudio. Create a folder called `.github` (yes, with the dot included!) and navigate inside this folder
+1.  Next, go back to your project on RStudio. We are going to link the project and the repo!
+
+2.  Switch to the **Terminal** tab, and type the following commands one by one (press enter after each line and let it finish running before proceeding to the next one).
+
+    ````         
+    ```         
+    git remote add origin <the .git link to your repo here>
+
+    git branch -M main
+
+    git add .  
+
+    git commit -m "initial commit"
+
+    git push origin main
+    ```
+    ````
+
+    What these commands do is tell RStudio that we want to link our Quarto website project with the GitHub repository that we just created.
+
+[**Back to GitHub:**]{.underline}
+
+1.  Back to your GitHub account, and refresh your repository. The repository should appear now!
+
+2.  Next, create a new branch in your repository called `gh-pages`. This is the branch that GitHub Pages will use the files to render the website.
+
+### Setting up GitHub Action
+
+[**On your RStudio:**]{.underline}
+
+1.  In your website project, create a folder called `.github` (yes, with the dot included!) and navigate inside this folder
 
 2.  Create a folder called `workflows` inside the `.github` folder
 
@@ -94,13 +124,9 @@ Note that we will be using GitHub Action to render the website for us to keep th
 
     This action will run whenever you push to the `main` branch of your repository. (It will also run when you manually trigger the action from the **Actions** tab of your repository.)
 
-4.  Switch to the **Terminal** tab, and type the following commands one by one (press enter after each line and let it finish running before proceeding to the next one).
+4.  Now we're ready to push this file back to GitHub. Go to your Terminal, and type the following command line by line (hit enter after each command)
 
     ```         
-    git remote add origin <the .git link to your repo here>
-
-    git branch -M main
-
     git add .  
 
     git commit -m "initial commit"
@@ -108,8 +134,6 @@ Note that we will be using GitHub Action to render the website for us to keep th
     git push origin main
     ```
 
-    What these commands do is tell RStudio that we want to link our Quarto website project with the GitHub repository that we just created.
+5.  Once the last line of the above command have been executed, Go back to your GitHub repository page and go to Actions tab. Give it a moment, and once it finishes executing (you should see a green check icon), your site should be ready!
 
 [^1]: <https://quarto.org/docs/publishing/github-pages.html#github-action>
-
-Once the last line of the above command have been executed, Go back to your GitHub repository page and refresh the page. Your local files should have been synchronized with the remote repository on GitHub!
