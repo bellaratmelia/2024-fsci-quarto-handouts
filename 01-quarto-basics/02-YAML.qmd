@@ -38,7 +38,7 @@ Try the YAML options below and find out what they do. Copy the \@
     error:
 ```
 
-### Sample Code
+### Sample Code {#sample-code}
 
 You may copy the code chunk below into your document, so as to try out the code and execution-related settings.
 
