@@ -18,17 +18,17 @@ format: html
 
 ### Instructions:
 
-1.  Add some executable R code or verbatim code
+1.  Add some **numbered list** and **non-numbered list**, using the *visual editor.* Switch back to the *markdown editor* and take note of the syntax. Try creating lists using codes as well.
 
-2.  Add some **numbered list** and **non-numbered list**, using the *visual editor.* Switch back to the *markdown editor* and take note of the syntax. Try creating lists using codes as well.
+2.  Add a piece of text and **hyperlink** it to a URL.
 
-3.  Add a piece of text and **hyperlink** it to a URL.
-
-4.  Insert the **image** of a cat cafe into your report. The path to the image is `01-quarto-basics/cat-cafe.jpg`
+3.  Insert the **image** of a cat cafe into your report. The path to the image is `01-quarto-basics/cat-cafe.jpg`
 
     ::: callout-tip
     Hint: Use the syntax `![caption](path_to_image)`. For example, `![Elephant](elephant.png)`
     :::
+
+4.  Add some executable R code or verbatim code (feel free to use the codes below in the Sample Report).
 
 5.  Render the document to see the output.
 
