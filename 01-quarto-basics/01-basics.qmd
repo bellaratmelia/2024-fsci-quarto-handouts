@@ -22,7 +22,7 @@ format: html
 
 2.  Add a piece of text and **hyperlink** it to a URL.
 
-3.  Insert the **image** of a cat cafe into your report. The path to the image is `01-quarto-basics/cat-cafe.jpg`
+3.  Insert the **image** of a cat cafe into your report. The path to the image is `cat-cafe.jpg`
 
     ::: callout-tip
     Hint: Use the syntax `![caption](path_to_image)`. For example, `![Elephant](elephant.png)`
