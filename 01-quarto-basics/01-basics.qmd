@@ -4,7 +4,7 @@ Author: "Danping"
 format: html
 ---
 
-## Hands-on #1
+## Hands-on: Your first Quarto document 
 
 ### Instructions
 
@@ -14,7 +14,7 @@ format: html
 4.  Add some text in bold or italics
 5.  Render the document using the `Render` button
 
-## Hands-on #2
+## Hands-on: Markdown Basics
 
 ### Instructions:
 

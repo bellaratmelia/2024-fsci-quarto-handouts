@@ -4,7 +4,7 @@ author: "Danping"
 format: html
 ---
 
-## Hands-on #3
+## Hands-on: More YAML
 
 ### Instructions
 
