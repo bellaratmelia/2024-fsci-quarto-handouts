@@ -1,10 +1,10 @@
 ---
 title: "Hands-on Exercises: Instructor Version"
-Author: "Danping"
+author: "Danping"
 format: html
 ---
 
-## Hands-on: Your first Quarto document 
+## Hands-on: Your first Quarto document
 
 ### Instructions
 

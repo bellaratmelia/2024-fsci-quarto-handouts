@@ -1,20 +1,20 @@
 ---
 title: "Hands-on: More YAML"
 author: "Danping"
-format: html
+date: 2024-07-30
 ---
 
 ## Hands-on: More YAML
 
 ### Instructions
 
-Use the Quarto document you created earlier, try different **YAML options** and **render** the document to see the resulting changes on the output document. Make sure to have different level headings, some text, and some codes - you can copy the [sample code chunk](#sample-code) below.
+Use the Quarto document you created earlier, try different **YAML options** and **render** the document to see the resulting changes on the output document. Make sure to have different level headings, some text, and some executable codes - you can copy the [sample code chunk](#sample-code) below.
 
 **Table of Contents**
 
 -   Add your table of contents `toc: true`
 -   Change the depth of your Table of Contents, e.g. `toc-depth: 3`
--   Type `number-sections` and click on `TAB`. What do you see? What does this YAML option do?
+-   Type `number-sections` and click on `TAB` on your keyboard, What do you see? What does this YAML option do?
 -   Change to other format, e.g. `html, PDF, pptx, revealjs`. How does the layout change?
 
 **Look & Feel**
@@ -32,11 +32,13 @@ Try the YAML options below and find out what they do. Use `#` to write down your
     code-tools: 
     code-fold:          #press TAB to see available options
     code-overflow:      #press TAB to see available options
-    echo: 
-    eval: 
+    echo: false 
+    eval: true
     warning:
     error:
 ```
+
+Check out more [highlighting styles](https://quarto.org/docs/output-formats/html-code.html#highlighting) here.
 
 ### Sample Code {#sample-code}
 
