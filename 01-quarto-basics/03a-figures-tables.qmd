@@ -7,7 +7,7 @@ format:
         toc-depth: 2
 ---
 
-## Hands-on #4
+## Hands-on: Figures, tables and cross-references
 
 ### Figures
 
@@ -32,9 +32,10 @@ format:
 3.  Use the `knitr::kable()` function to format the table output from the code chunk below.
 
 ```{r}
-penguins %>% 
-  group_by(species) %>% 
-    summarize(across(where(is.numeric), mean, na.rm = TRUE))
+library(tidyverse)
+library(palmerpenguins)
+
+penguins %>% count(species) #take the penguins dataset from palmerpenguins package and count the number of each species
 ```
 
 ### Two-column Layout

@@ -1,10 +1,10 @@
 ---
 title: "Hands-on Exercises: Instructor Version"
-Author: "Danping"
+author: "Danping"
 format: html
 ---
 
-## Hands-on #1
+## Hands-on: Your first Quarto document
 
 ### Instructions
 
@@ -14,7 +14,7 @@ format: html
 4.  Add some text in bold or italics
 5.  Render the document using the `Render` button
 
-## Hands-on #2
+## Hands-on: Markdown Basics
 
 ### Instructions:
 
@@ -22,7 +22,7 @@ format: html
 
 2.  Add a piece of text and **hyperlink** it to a URL.
 
-3.  Insert the **image** of a cat cafe into your report. The path to the image is `01-quarto-basics/cat-cafe.jpg`
+3.  Insert the **image** of a cat cafe into your report. The path to the image is `cat-cafe.jpg`
 
     ::: callout-tip
     Hint: Use the syntax `![caption](path_to_image)`. For example, `![Elephant](elephant.png)`
